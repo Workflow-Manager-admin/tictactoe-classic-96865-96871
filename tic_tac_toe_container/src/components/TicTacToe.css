@@ -1,0 +1,98 @@
+/* TicTacToe Container */
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 32px 16px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.tictactoe-container h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+/* Game Board */
+.game-board {
+  margin: 20px 0;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+}
+
+/* Individual Square */
+.square {
+  background: var(--kavia-dark);
+  border: 2px solid var(--kavia-orange);
+  color: var(--text-color);
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  margin-right: -2px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:focus {
+  outline: none;
+  background: rgba(232, 122, 65, 0.2);
+}
+
+.square:hover {
+  background: rgba(232, 122, 65, 0.1);
+}
+
+/* Game Information */
+.game-info {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.winner {
+  color: var(--kavia-orange);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.reset-button {
+  background: var(--kavia-orange);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background: #FF8B4D;
+}
